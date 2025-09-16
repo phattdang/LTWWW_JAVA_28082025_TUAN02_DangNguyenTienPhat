@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+<h2>User Input Form</h2>
+<form method="get" action="user">
+    <fieldset>
+        <legend>Personal Particular</legend>
+        Name:
+        <input type="text" name="username" minlength="8" maxlength="12" required/>
+        <br/>
+        <br/>
+        Password: tHoa12@#!abcdef12345
+        <input type="password" name="password" required
+               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+]).{12,}$"/>
+        <br/>
+        <br/>
+        Email: <input type="email" name="email" required/>
+        <br/>
+        <br/>
+        Gender:
+        <input type="radio" name="gender" value="m" checked/>Male
+        <input type="radio" name="gender" value="f"/>Female
+        <br/>
+        <br/>
+    </fieldset>
+
+    <input type="hidden" name="secret" value="888"/>
+    <input type="submit" value="Send"/>
+    <input type="reset" value="Clear All"/>
+</form>
+</body>
+</html>
